@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCB81B4BE82F00F30BBE /* AppDelegate.m */; };
+		44CABCBB1B4BE82F00F30BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBA1B4BE82F00F30BBE /* main.m */; };
+		44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBD1B4BE82F00F30BBE /* ViewController.m */; };
+		44CABCC01B4BE82F00F30BBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CABCBF1B4BE82F00F30BBE /* Images.xcassets */; };
+		44CABCC31B4BE82F00F30BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CABCC11B4BE82F00F30BBE /* Main.storyboard */; };
+		44CABCCF1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCCE1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44CABCC91B4BE82F00F30BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CABCAA1B4BE82F00F30BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CABCB11B4BE82F00F30BBE;
+			remoteInfo = "Lightroom Catalog Cleaner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightroom Catalog Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CABCB61B4BE82F00F30BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CABCB71B4BE82F00F30BBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44CABCB81B4BE82F00F30BBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44CABCBA1B4BE82F00F30BBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44CABCBC1B4BE82F00F30BBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44CABCBD1B4BE82F00F30BBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44CABCBF1B4BE82F00F30BBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44CABCC21B4BE82F00F30BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44CABCC81B4BE82F00F30BBE /* Lightroom Catalog CleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lightroom Catalog CleanerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CABCCD1B4BE82F00F30BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CABCCE1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lightroom_Catalog_CleanerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44CABCAF1B4BE82F00F30BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CABCC51B4BE82F00F30BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44CABCA91B4BE82F00F30BBE = {
+			isa = PBXGroup;
+			children = (
+				44CABCB41B4BE82F00F30BBE /* Lightroom Catalog Cleaner */,
+				44CABCCB1B4BE82F00F30BBE /* Lightroom Catalog CleanerTests */,
+				44CABCB31B4BE82F00F30BBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44CABCB31B4BE82F00F30BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */,
+				44CABCC81B4BE82F00F30BBE /* Lightroom Catalog CleanerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44CABCB41B4BE82F00F30BBE /* Lightroom Catalog Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				44CABCB71B4BE82F00F30BBE /* AppDelegate.h */,
+				44CABCB81B4BE82F00F30BBE /* AppDelegate.m */,
+				44CABCBC1B4BE82F00F30BBE /* ViewController.h */,
+				44CABCBD1B4BE82F00F30BBE /* ViewController.m */,
+				44CABCBF1B4BE82F00F30BBE /* Images.xcassets */,
+				44CABCC11B4BE82F00F30BBE /* Main.storyboard */,
+				44CABCB51B4BE82F00F30BBE /* Supporting Files */,
+			);
+			path = "Lightroom Catalog Cleaner";
+			sourceTree = "<group>";
+		};
+		44CABCB51B4BE82F00F30BBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CABCB61B4BE82F00F30BBE /* Info.plist */,
+				44CABCBA1B4BE82F00F30BBE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44CABCCB1B4BE82F00F30BBE /* Lightroom Catalog CleanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				44CABCCE1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m */,
+				44CABCCC1B4BE82F00F30BBE /* Supporting Files */,
+			);
+			path = "Lightroom Catalog CleanerTests";
+			sourceTree = "<group>";
+		};
+		44CABCCC1B4BE82F00F30BBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CABCCD1B4BE82F00F30BBE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44CABCB11B4BE82F00F30BBE /* Lightroom Catalog Cleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CABCD21B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog Cleaner" */;
+			buildPhases = (
+				44CABCAE1B4BE82F00F30BBE /* Sources */,
+				44CABCAF1B4BE82F00F30BBE /* Frameworks */,
+				44CABCB01B4BE82F00F30BBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lightroom Catalog Cleaner";
+			productName = "Lightroom Catalog Cleaner";
+			productReference = 44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44CABCC71B4BE82F00F30BBE /* Lightroom Catalog CleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CABCD51B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog CleanerTests" */;
+			buildPhases = (
+				44CABCC41B4BE82F00F30BBE /* Sources */,
+				44CABCC51B4BE82F00F30BBE /* Frameworks */,
+				44CABCC61B4BE82F00F30BBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44CABCCA1B4BE82F00F30BBE /* PBXTargetDependency */,
+			);
+			name = "Lightroom Catalog CleanerTests";
+			productName = "Lightroom Catalog CleanerTests";
+			productReference = 44CABCC81B4BE82F00F30BBE /* Lightroom Catalog CleanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44CABCAA1B4BE82F00F30BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Maxime Chaillou";
+				TargetAttributes = {
+					44CABCB11B4BE82F00F30BBE = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					44CABCC71B4BE82F00F30BBE = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 44CABCB11B4BE82F00F30BBE;
+					};
+				};
+			};
+			buildConfigurationList = 44CABCAD1B4BE82F00F30BBE /* Build configuration list for PBXProject "Lightroom Catalog Cleaner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44CABCA91B4BE82F00F30BBE;
+			productRefGroup = 44CABCB31B4BE82F00F30BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44CABCB11B4BE82F00F30BBE /* Lightroom Catalog Cleaner */,
+				44CABCC71B4BE82F00F30BBE /* Lightroom Catalog CleanerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44CABCB01B4BE82F00F30BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CABCC01B4BE82F00F30BBE /* Images.xcassets in Resources */,
+				44CABCC31B4BE82F00F30BBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CABCC61B4BE82F00F30BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44CABCAE1B4BE82F00F30BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */,
+				44CABCBB1B4BE82F00F30BBE /* main.m in Sources */,
+				44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CABCC41B4BE82F00F30BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CABCCF1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44CABCCA1B4BE82F00F30BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CABCB11B4BE82F00F30BBE /* Lightroom Catalog Cleaner */;
+			targetProxy = 44CABCC91B4BE82F00F30BBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44CABCC11B4BE82F00F30BBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44CABCC21B4BE82F00F30BBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44CABCD01B4BE82F00F30BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		44CABCD11B4BE82F00F30BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		44CABCD31B4BE82F00F30BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Lightroom Catalog Cleaner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44CABCD41B4BE82F00F30BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Lightroom Catalog Cleaner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44CABCD61B4BE82F00F30BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lightroom Catalog CleanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lightroom Catalog Cleaner.app/Contents/MacOS/Lightroom Catalog Cleaner";
+			};
+			name = Debug;
+		};
+		44CABCD71B4BE82F00F30BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lightroom Catalog CleanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lightroom Catalog Cleaner.app/Contents/MacOS/Lightroom Catalog Cleaner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44CABCAD1B4BE82F00F30BBE /* Build configuration list for PBXProject "Lightroom Catalog Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CABCD01B4BE82F00F30BBE /* Debug */,
+				44CABCD11B4BE82F00F30BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CABCD21B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CABCD31B4BE82F00F30BBE /* Debug */,
+				44CABCD41B4BE82F00F30BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44CABCD51B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog CleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CABCD61B4BE82F00F30BBE /* Debug */,
+				44CABCD71B4BE82F00F30BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44CABCAA1B4BE82F00F30BBE /* Project object */;
+}
