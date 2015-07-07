@@ -10,6 +10,7 @@
 
 @interface ViewController : NSViewController
 
+@property (strong) IBOutlet NSView *backgroundView;
 
 @end
 
