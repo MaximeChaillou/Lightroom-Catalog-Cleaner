@@ -73,6 +73,10 @@
                               NSLog(@"%@", path);
                               
                               FMDatabase *db = [FMDatabase databaseWithPath:path];
+                              NSFileManager *fileManager = [NSFileManager defaultManager];
+                              
+                              long total = 0;
+                              
                               if ( [db open] ) {
                                   NSLog(@"Database opened");
                                   FMResultSet *s = [db executeQuery:@"SELECT Adobe_images.rootFile, AgLibraryFile.baseName, AgLibraryFolder.pathFromRoot, AgLibraryRootFolder.absolutePath FROM Adobe_images INNER JOIN AgLibraryFile ON Adobe_images.rootFile = AgLibraryFile.id_local INNER JOIN AgLibraryFolder ON AgLibraryFile.folder = AgLibraryFolder.id_local INNER JOIN AgLibraryRootFolder ON AgLibraryFolder.rootFolder = AgLibraryRootFolder.id_local WHERE Adobe_images.pick != 1 AND fileFormat = 'RAW'"];
@@ -85,17 +89,20 @@
                                       NSLog(@"URL = %@", url);
                                       if ([url isFileURL]) {
                                           NSError *error = nil;
+                                          NSDictionary *info = [fileManager attributesOfItemAtPath:url.path error:&error];
                                           
-                                          NSDictionary *info = [[NSFileManager defaultManager] attributesOfItemAtPath:url.path error:&error];
+                                          total += [[info valueForKey:NSFileSize] longValue];
+                                          
                                           NSLog(@"error : %@", error);
-                                          NSLog(@"%@", [info valueForKey:NSFileSize]);
+                                          NSLog(@"%@", [NSByteCountFormatter stringFromByteCount:[[info valueForKey:NSFileSize] longLongValue] countStyle:NSByteCountFormatterCountStyleFile]);
                                       }
                                       else {
                                           NSLog(@"Can't open file");
                                       }
                                       
-                                      
                                   }
+                                  
+                                  self.totalSize.stringValue = [NSByteCountFormatter stringFromByteCount:total countStyle:NSByteCountFormatterCountStyleFile];
                               }
                               
                           }

@@ -14,6 +14,7 @@
 @property (strong) NSURL *fileURL;
 @property (strong) NSPasteboard *pboard;
 @property (weak) IBOutlet NSButton *openFileButton;
+@property (weak) IBOutlet NSTextField *totalSize;
 
 @end
 
