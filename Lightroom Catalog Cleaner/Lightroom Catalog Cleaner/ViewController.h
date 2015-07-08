@@ -11,6 +11,9 @@
 @interface ViewController : NSViewController
 
 @property (strong) IBOutlet NSView *backgroundView;
+@property (strong) NSURL *fileURL;
+@property (strong) NSPasteboard *pboard;
+@property (weak) IBOutlet NSButton *openFileButton;
 
 @end
 
