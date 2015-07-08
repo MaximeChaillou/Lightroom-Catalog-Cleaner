@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+platform :osx
+
+target 'Lightroom Catalog Cleaner' do
+pod 'FMDB'
+end
+
+target 'Lightroom Catalog CleanerTests' do
+
+end
+

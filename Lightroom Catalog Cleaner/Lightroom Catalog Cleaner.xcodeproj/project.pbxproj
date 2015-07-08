@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */; };
 		44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCB81B4BE82F00F30BBE /* AppDelegate.m */; };
 		44CABCBB1B4BE82F00F30BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBA1B4BE82F00F30BBE /* main.m */; };
 		44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBD1B4BE82F00F30BBE /* ViewController.m */; };
 		44CABCC01B4BE82F00F30BBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CABCBF1B4BE82F00F30BBE /* Images.xcassets */; };
 		44CABCC31B4BE82F00F30BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CABCC11B4BE82F00F30BBE /* Main.storyboard */; };
 		44CABCCF1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCCE1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m */; };
+		EA11FE95EDD54EBF11B2C9F8 /* libPods-Lightroom Catalog Cleaner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C3771F12E3F1189337DD95 /* libPods-Lightroom Catalog Cleaner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightroom Catalog Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CABCB61B4BE82F00F30BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44CABCB71B4BE82F00F30BBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		44CABCC81B4BE82F00F30BBE /* Lightroom Catalog CleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lightroom Catalog CleanerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CABCCD1B4BE82F00F30BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44CABCCE1B4BE82F00F30BBE /* Lightroom_Catalog_CleanerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lightroom_Catalog_CleanerTests.m; sourceTree = "<group>"; };
+		E0C3771F12E3F1189337DD95 /* libPods-Lightroom Catalog Cleaner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lightroom Catalog Cleaner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F530AAF1467AB5A51CB683C6 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightroom Catalog Cleaner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lightroom Catalog Cleaner/Pods-Lightroom Catalog Cleaner.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE61C53ABA3A4878C0E3C9B /* Pods-Lightroom Catalog Cleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightroom Catalog Cleaner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lightroom Catalog Cleaner/Pods-Lightroom Catalog Cleaner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */,
+				EA11FE95EDD54EBF11B2C9F8 /* libPods-Lightroom Catalog Cleaner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4BD195FB20C419AEB65A33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F530AAF1467AB5A51CB683C6 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */,
+				FDE61C53ABA3A4878C0E3C9B /* Pods-Lightroom Catalog Cleaner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		44CABCA91B4BE82F00F30BBE = {
 			isa = PBXGroup;
 			children = (
+				440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */,
 				44CABCB41B4BE82F00F30BBE /* Lightroom Catalog Cleaner */,
 				44CABCCB1B4BE82F00F30BBE /* Lightroom Catalog CleanerTests */,
 				44CABCB31B4BE82F00F30BBE /* Products */,
+				1B4BD195FB20C419AEB65A33 /* Pods */,
+				898FC8503339806149067E1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +136,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		898FC8503339806149067E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0C3771F12E3F1189337DD95 /* libPods-Lightroom Catalog Cleaner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44CABCD21B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog Cleaner" */;
 			buildPhases = (
+				5E98C20D40063A4DE322CF4E /* Check Pods Manifest.lock */,
 				44CABCAE1B4BE82F00F30BBE /* Sources */,
 				44CABCAF1B4BE82F00F30BBE /* Frameworks */,
 				44CABCB01B4BE82F00F30BBE /* Resources */,
+				7C270925E1752658D40B059D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E98C20D40063A4DE322CF4E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C270925E1752658D40B059D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lightroom Catalog Cleaner/Pods-Lightroom Catalog Cleaner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44CABCAE1B4BE82F00F30BBE /* Sources */ = {
@@ -332,22 +395,26 @@
 		};
 		44CABCD31B4BE82F00F30BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F530AAF1467AB5A51CB683C6 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Lightroom Catalog Cleaner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		44CABCD41B4BE82F00F30BBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE61C53ABA3A4878C0E3C9B /* Pods-Lightroom Catalog Cleaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Lightroom Catalog Cleaner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -407,6 +474,7 @@
 				44CABCD41B4BE82F00F30BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44CABCD51B4BE82F00F30BBE /* Build configuration list for PBXNativeTarget "Lightroom Catalog CleanerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +483,7 @@
 				44CABCD71B4BE82F00F30BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

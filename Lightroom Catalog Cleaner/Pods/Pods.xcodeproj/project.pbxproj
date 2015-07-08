@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDEBA35DB04FC32223B13B5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E967406CCAB2BDEDC9F6F /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		236B76725E88754A86B25633 /* Pods-Lightroom Catalog Cleaner-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7098B9AAE4634ACBD53D6D57 /* Pods-Lightroom Catalog Cleaner-FMDB-dummy.m */; };
+		2B04A07254ED4515A928CA3A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C50DAADC291854D70EE4A2 /* FMResultSet.h */; };
+		43E1D38988AB0481D6449EE4 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A21DAD89BA58301AE0A7637E /* FMDatabaseQueue.h */; };
+		48ED183C88C053240E8E9FD5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61673C5A11B72AEDA22906 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E856C8424A1C63DB40BF56F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7199BBA13996E17327D2A3 /* Cocoa.framework */; };
+		5341548C72DA1D7C38262700 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7199BBA13996E17327D2A3 /* Cocoa.framework */; };
+		6DAE140CF9FA4DE6A1E30993 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 502D636CBDD4ADCC2E0EA8F5 /* FMDatabase.h */; };
+		6DFCEC6B41DA310986BAA901 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 16591C09781B859318A11933 /* FMDB.h */; };
+		BA12A64A9EDD0CE2398D452D /* Pods-Lightroom Catalog Cleaner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BA9C622F8EB8CBDC934DBF /* Pods-Lightroom Catalog Cleaner-dummy.m */; };
+		BC43AF55F077941E9BC66EB9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE684F2BEEA410521EA1C8 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C7751922CEE3FAE8F24F0C4F /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C19396BEB6B425471443014 /* FMDatabaseAdditions.h */; };
+		D1886153A50E5C6C5A09A492 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = BE37B92A75FD67F59E73B963 /* FMDatabasePool.h */; };
+		D7F5EF8725C2C0BD59260F81 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8A86BF7C1C9E87FD9CB9 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E90797F237153D6B57F8D3F9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C62667A783ECAFCC6DD8BB /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9063EB86506E4D2B81ED843A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E626EC26873AC03964E7DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE48DEE99E6B2751D24F81DA;
+			remoteInfo = "Pods-Lightroom Catalog Cleaner-FMDB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16591C09781B859318A11933 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		1B33D4E6B887B8E9B02C0E2C /* Pods-Lightroom Catalog Cleaner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lightroom Catalog Cleaner-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E1E967406CCAB2BDEDC9F6F /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		22453B6B4E48CC76911BB91E /* Pods-Lightroom Catalog Cleaner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Lightroom Catalog Cleaner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30726673AB789E4E112E8B03 /* Pods-Lightroom Catalog Cleaner-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lightroom Catalog Cleaner-environment.h"; sourceTree = "<group>"; };
+		3094809DFD15659DE7644527 /* Pods-Lightroom Catalog Cleaner-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lightroom Catalog Cleaner-FMDB-prefix.pch"; sourceTree = "<group>"; };
+		38C62667A783ECAFCC6DD8BB /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		4C61673C5A11B72AEDA22906 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		502D636CBDD4ADCC2E0EA8F5 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		52ADB406E1A592B04DEE107D /* libPods-Lightroom Catalog Cleaner-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lightroom Catalog Cleaner-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C50DAADC291854D70EE4A2 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		5C19396BEB6B425471443014 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		5CC83574D3C0F06888E725A7 /* Pods-Lightroom Catalog Cleaner-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lightroom Catalog Cleaner-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		67BA9C622F8EB8CBDC934DBF /* Pods-Lightroom Catalog Cleaner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lightroom Catalog Cleaner-dummy.m"; sourceTree = "<group>"; };
+		7098B9AAE4634ACBD53D6D57 /* Pods-Lightroom Catalog Cleaner-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lightroom Catalog Cleaner-FMDB-dummy.m"; sourceTree = "<group>"; };
+		7D1D2CEA1B5EDC2E550F6017 /* libPods-Lightroom Catalog Cleaner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lightroom Catalog Cleaner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEE684F2BEEA410521EA1C8 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9A509A94D3F1FAB1375A5A0F /* Pods-Lightroom Catalog Cleaner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lightroom Catalog Cleaner-resources.sh"; sourceTree = "<group>"; };
+		9DFF4C53ED6A8A9FA869C2A6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A21DAD89BA58301AE0A7637E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A220BF4A76B2366C9FDDEE92 /* Pods-Lightroom Catalog Cleaner-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lightroom Catalog Cleaner-FMDB.xcconfig"; sourceTree = "<group>"; };
+		BA1E8A86BF7C1C9E87FD9CB9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		BE37B92A75FD67F59E73B963 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		C46E8BC59DB346C63C840D45 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lightroom Catalog Cleaner.debug.xcconfig"; sourceTree = "<group>"; };
+		D64A2238CD557BDA4AB63E69 /* Pods-Lightroom Catalog Cleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lightroom Catalog Cleaner.release.xcconfig"; sourceTree = "<group>"; };
+		DA7199BBA13996E17327D2A3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9EAA4662FAF59931895FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E856C8424A1C63DB40BF56F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BFE3DCBD3122977C7C5D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5341548C72DA1D7C38262700 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E50B6747A8B97D9681EB0FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A220BF4A76B2366C9FDDEE92 /* Pods-Lightroom Catalog Cleaner-FMDB.xcconfig */,
+				5CC83574D3C0F06888E725A7 /* Pods-Lightroom Catalog Cleaner-FMDB-Private.xcconfig */,
+				7098B9AAE4634ACBD53D6D57 /* Pods-Lightroom Catalog Cleaner-FMDB-dummy.m */,
+				3094809DFD15659DE7644527 /* Pods-Lightroom Catalog Cleaner-FMDB-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Lightroom Catalog Cleaner-FMDB";
+			sourceTree = "<group>";
+		};
+		14F7C2D59068C5F7CF48242F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EAD26A7E7A36341DB9F5452 /* FMDB */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		265F35ABE6A7E3427816B2FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				829A736C6469B93F9A4E171F /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D0F3A989370C709BBC1940A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				16591C09781B859318A11933 /* FMDB.h */,
+				502D636CBDD4ADCC2E0EA8F5 /* FMDatabase.h */,
+				4C61673C5A11B72AEDA22906 /* FMDatabase.m */,
+				5C19396BEB6B425471443014 /* FMDatabaseAdditions.h */,
+				8BEE684F2BEEA410521EA1C8 /* FMDatabaseAdditions.m */,
+				BE37B92A75FD67F59E73B963 /* FMDatabasePool.h */,
+				38C62667A783ECAFCC6DD8BB /* FMDatabasePool.m */,
+				A21DAD89BA58301AE0A7637E /* FMDatabaseQueue.h */,
+				BA1E8A86BF7C1C9E87FD9CB9 /* FMDatabaseQueue.m */,
+				53C50DAADC291854D70EE4A2 /* FMResultSet.h */,
+				1E1E967406CCAB2BDEDC9F6F /* FMResultSet.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		37DABE03E13A00097770AA77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D2CEA1B5EDC2E550F6017 /* libPods-Lightroom Catalog Cleaner.a */,
+				52ADB406E1A592B04DEE107D /* libPods-Lightroom Catalog Cleaner-FMDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EAD26A7E7A36341DB9F5452 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0E50B6747A8B97D9681EB0FA /* Support Files */,
+				2D0F3A989370C709BBC1940A /* common */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		829A736C6469B93F9A4E171F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DA7199BBA13996E17327D2A3 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		A0A6889CA6CB31C0DF552B2F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C96B1BE65A6234F8114D1 /* Pods-Lightroom Catalog Cleaner */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ADADCE3DC8F31664E98B9F23 = {
+			isa = PBXGroup;
+			children = (
+				9DFF4C53ED6A8A9FA869C2A6 /* Podfile */,
+				265F35ABE6A7E3427816B2FC /* Frameworks */,
+				14F7C2D59068C5F7CF48242F /* Pods */,
+				37DABE03E13A00097770AA77 /* Products */,
+				A0A6889CA6CB31C0DF552B2F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FD2C96B1BE65A6234F8114D1 /* Pods-Lightroom Catalog Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				22453B6B4E48CC76911BB91E /* Pods-Lightroom Catalog Cleaner-acknowledgements.markdown */,
+				1B33D4E6B887B8E9B02C0E2C /* Pods-Lightroom Catalog Cleaner-acknowledgements.plist */,
+				67BA9C622F8EB8CBDC934DBF /* Pods-Lightroom Catalog Cleaner-dummy.m */,
+				30726673AB789E4E112E8B03 /* Pods-Lightroom Catalog Cleaner-environment.h */,
+				9A509A94D3F1FAB1375A5A0F /* Pods-Lightroom Catalog Cleaner-resources.sh */,
+				C46E8BC59DB346C63C840D45 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */,
+				D64A2238CD557BDA4AB63E69 /* Pods-Lightroom Catalog Cleaner.release.xcconfig */,
+			);
+			name = "Pods-Lightroom Catalog Cleaner";
+			path = "Target Support Files/Pods-Lightroom Catalog Cleaner";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A451F2FBABCD1EB510012126 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFCEC6B41DA310986BAA901 /* FMDB.h in Headers */,
+				6DAE140CF9FA4DE6A1E30993 /* FMDatabase.h in Headers */,
+				C7751922CEE3FAE8F24F0C4F /* FMDatabaseAdditions.h in Headers */,
+				D1886153A50E5C6C5A09A492 /* FMDatabasePool.h in Headers */,
+				43E1D38988AB0481D6449EE4 /* FMDatabaseQueue.h in Headers */,
+				2B04A07254ED4515A928CA3A /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03CDEB94CCB3D099CA7A4512 /* Pods-Lightroom Catalog Cleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D6002BA2CE23E173CD8501 /* Build configuration list for PBXNativeTarget "Pods-Lightroom Catalog Cleaner" */;
+			buildPhases = (
+				DDD268BA834F040487FC3FEF /* Sources */,
+				5D9EAA4662FAF59931895FDF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9229CEA986698679B497EA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Lightroom Catalog Cleaner";
+			productName = "Pods-Lightroom Catalog Cleaner";
+			productReference = 7D1D2CEA1B5EDC2E550F6017 /* libPods-Lightroom Catalog Cleaner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BE48DEE99E6B2751D24F81DA /* Pods-Lightroom Catalog Cleaner-FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC934065027B62DA4C02C0FC /* Build configuration list for PBXNativeTarget "Pods-Lightroom Catalog Cleaner-FMDB" */;
+			buildPhases = (
+				5BCE6342022454DA3C1C32CB /* Sources */,
+				E4BFE3DCBD3122977C7C5D5A /* Frameworks */,
+				A451F2FBABCD1EB510012126 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Lightroom Catalog Cleaner-FMDB";
+			productName = "Pods-Lightroom Catalog Cleaner-FMDB";
+			productReference = 52ADB406E1A592B04DEE107D /* libPods-Lightroom Catalog Cleaner-FMDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E626EC26873AC03964E7DF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 8A67CBB9E38AC6B3984AC18C /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADADCE3DC8F31664E98B9F23;
+			productRefGroup = 37DABE03E13A00097770AA77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03CDEB94CCB3D099CA7A4512 /* Pods-Lightroom Catalog Cleaner */,
+				BE48DEE99E6B2751D24F81DA /* Pods-Lightroom Catalog Cleaner-FMDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BCE6342022454DA3C1C32CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48ED183C88C053240E8E9FD5 /* FMDatabase.m in Sources */,
+				BC43AF55F077941E9BC66EB9 /* FMDatabaseAdditions.m in Sources */,
+				E90797F237153D6B57F8D3F9 /* FMDatabasePool.m in Sources */,
+				D7F5EF8725C2C0BD59260F81 /* FMDatabaseQueue.m in Sources */,
+				1DDEBA35DB04FC32223B13B5 /* FMResultSet.m in Sources */,
+				236B76725E88754A86B25633 /* Pods-Lightroom Catalog Cleaner-FMDB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD268BA834F040487FC3FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA12A64A9EDD0CE2398D452D /* Pods-Lightroom Catalog Cleaner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9229CEA986698679B497EA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Lightroom Catalog Cleaner-FMDB";
+			target = BE48DEE99E6B2751D24F81DA /* Pods-Lightroom Catalog Cleaner-FMDB */;
+			targetProxy = 9063EB86506E4D2B81ED843A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		166D28EFB39FFC244769EEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46E8BC59DB346C63C840D45 /* Pods-Lightroom Catalog Cleaner.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		482C8D6D63059DB2487EA21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		552656B14AD578E4A20AE04B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC83574D3C0F06888E725A7 /* Pods-Lightroom Catalog Cleaner-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Lightroom Catalog Cleaner-FMDB/Pods-Lightroom Catalog Cleaner-FMDB-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		617FAFA75EB0E8F833EFD28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		861F1E68EF725DE37A41F827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64A2238CD557BDA4AB63E69 /* Pods-Lightroom Catalog Cleaner.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B54744F590F38408C7D969DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC83574D3C0F06888E725A7 /* Pods-Lightroom Catalog Cleaner-FMDB-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Lightroom Catalog Cleaner-FMDB/Pods-Lightroom Catalog Cleaner-FMDB-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88D6002BA2CE23E173CD8501 /* Build configuration list for PBXNativeTarget "Pods-Lightroom Catalog Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166D28EFB39FFC244769EEA1 /* Debug */,
+				861F1E68EF725DE37A41F827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A67CBB9E38AC6B3984AC18C /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482C8D6D63059DB2487EA21B /* Debug */,
+				617FAFA75EB0E8F833EFD28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC934065027B62DA4C02C0FC /* Build configuration list for PBXNativeTarget "Pods-Lightroom Catalog Cleaner-FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552656B14AD578E4A20AE04B /* Debug */,
+				B54744F590F38408C7D969DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E626EC26873AC03964E7DF6 /* Project object */;
+}

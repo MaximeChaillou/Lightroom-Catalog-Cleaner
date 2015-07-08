@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FMDB.h"
 
 @implementation ViewController
 
@@ -70,6 +71,17 @@
                               
                               //here add your own code to open the file
                               NSLog(@"%@", path);
+                              
+                              FMDatabase *db = [FMDatabase databaseWithPath:path];
+                              if ( [db open] ) {
+                                  NSLog(@"Database opened");
+                                  FMResultSet *s = [db executeQuery:@"SELECT Adobe_images.rootFile, AgLibraryFile.baseName FROM Adobe_images INNER JOIN AgLibraryFile ON AgLibraryFile.id_local = Adobe_images.rootFile WHERE Adobe_images.pick != 1.0"];
+                                  while ([s next]) {
+                                      //retrieve values for each record
+                                      NSLog(@"%d", [s intForColumnIndex:0]);
+                                      NSLog(@"%@", [s stringForColumnIndex:1]);
+                                  }
+                              }
                               
                           }
                           
