@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */; };
+		444E23001B4D404C00BCF3A5 /* CatalogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */; };
 		44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCB81B4BE82F00F30BBE /* AppDelegate.m */; };
 		44CABCBB1B4BE82F00F30BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBA1B4BE82F00F30BBE /* main.m */; };
 		44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBD1B4BE82F00F30BBE /* ViewController.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		444E22FE1B4D404C00BCF3A5 /* CatalogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogManager.h; sourceTree = "<group>"; };
+		444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogManager.m; sourceTree = "<group>"; };
 		44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightroom Catalog Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CABCB61B4BE82F00F30BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44CABCB71B4BE82F00F30BBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				44CABCB81B4BE82F00F30BBE /* AppDelegate.m */,
 				44CABCBC1B4BE82F00F30BBE /* ViewController.h */,
 				44CABCBD1B4BE82F00F30BBE /* ViewController.m */,
+				444E22FE1B4D404C00BCF3A5 /* CatalogManager.h */,
+				444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */,
 				44CABCBF1B4BE82F00F30BBE /* Images.xcassets */,
 				44CABCC11B4BE82F00F30BBE /* Main.storyboard */,
 				44CABCB51B4BE82F00F30BBE /* Supporting Files */,
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */,
+				444E23001B4D404C00BCF3A5 /* CatalogManager.m in Sources */,
 				44CABCBB1B4BE82F00F30BBE /* main.m in Sources */,
 				44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */,
 			);
