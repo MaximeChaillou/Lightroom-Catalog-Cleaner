@@ -102,7 +102,8 @@
                                       
                                   }
                                   
-                                  self.totalSize.stringValue = [NSByteCountFormatter stringFromByteCount:total countStyle:NSByteCountFormatterCountStyleFile];
+                                  self.totalSize.stringValue = [NSString stringWithFormat:@"You can save : %@", [NSByteCountFormatter stringFromByteCount:total countStyle:NSByteCountFormatterCountStyleFile]];
+                                  self.totalSize.hidden = NO;
                               }
                               
                           }
