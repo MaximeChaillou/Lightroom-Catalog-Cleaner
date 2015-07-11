@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */; };
+		44485B751B50919F008E5C88 /* FileObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44485B741B50919F008E5C88 /* FileObject.m */; };
 		444E23001B4D404C00BCF3A5 /* CatalogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */; };
 		44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCB81B4BE82F00F30BBE /* AppDelegate.m */; };
 		44CABCBB1B4BE82F00F30BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBA1B4BE82F00F30BBE /* main.m */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		44485B731B50919F008E5C88 /* FileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileObject.h; sourceTree = "<group>"; };
+		44485B741B50919F008E5C88 /* FileObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileObject.m; sourceTree = "<group>"; };
 		444E22FE1B4D404C00BCF3A5 /* CatalogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogManager.h; sourceTree = "<group>"; };
 		444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogManager.m; sourceTree = "<group>"; };
 		44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightroom Catalog Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +111,8 @@
 				44CABCBD1B4BE82F00F30BBE /* ViewController.m */,
 				444E22FE1B4D404C00BCF3A5 /* CatalogManager.h */,
 				444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */,
+				44485B731B50919F008E5C88 /* FileObject.h */,
+				44485B741B50919F008E5C88 /* FileObject.m */,
 				44CABCBF1B4BE82F00F30BBE /* Images.xcassets */,
 				44CABCC11B4BE82F00F30BBE /* Main.storyboard */,
 				44CABCB51B4BE82F00F30BBE /* Supporting Files */,
@@ -286,6 +291,7 @@
 				44CABCBE1B4BE82F00F30BBE /* ViewController.m in Sources */,
 				444E23001B4D404C00BCF3A5 /* CatalogManager.m in Sources */,
 				44CABCBB1B4BE82F00F30BBE /* main.m in Sources */,
+				44485B751B50919F008E5C88 /* FileObject.m in Sources */,
 				44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

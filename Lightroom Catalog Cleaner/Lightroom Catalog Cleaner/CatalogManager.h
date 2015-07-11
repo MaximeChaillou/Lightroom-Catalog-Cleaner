@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDB.h"
 
 @interface CatalogManager : NSObject
 
-+ (int) getTotalFilesCountForCatalog: (NSString *) catalog;
-+ (NSArray *) getNonPickedFiledForCatalog: (NSString *) catalog;
+- (id)initDatabaseWithPath: (NSString *) path;
+
+- (void) getTotalFilesCount;
+- (NSArray *) getNonPickedFiles;
 
 @end
