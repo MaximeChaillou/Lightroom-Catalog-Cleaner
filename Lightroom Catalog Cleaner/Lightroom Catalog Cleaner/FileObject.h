@@ -13,4 +13,7 @@
 @property NSURL *path;
 @property long size;
 
+
+- (long) getSize;
+
 @end

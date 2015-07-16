@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */; };
 		44485B751B50919F008E5C88 /* FileObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44485B741B50919F008E5C88 /* FileObject.m */; };
+		44485B771B50A8B8008E5C88 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44485B761B50A8B8008E5C88 /* Quartz.framework */; };
 		444E23001B4D404C00BCF3A5 /* CatalogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */; };
 		44CABCB91B4BE82F00F30BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCB81B4BE82F00F30BBE /* AppDelegate.m */; };
 		44CABCBB1B4BE82F00F30BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CABCBA1B4BE82F00F30BBE /* main.m */; };
@@ -33,6 +34,7 @@
 		440492AD1B4CAB85001ECCEF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		44485B731B50919F008E5C88 /* FileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileObject.h; sourceTree = "<group>"; };
 		44485B741B50919F008E5C88 /* FileObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileObject.m; sourceTree = "<group>"; };
+		44485B761B50A8B8008E5C88 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		444E22FE1B4D404C00BCF3A5 /* CatalogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogManager.h; sourceTree = "<group>"; };
 		444E22FF1B4D404C00BCF3A5 /* CatalogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogManager.m; sourceTree = "<group>"; };
 		44CABCB21B4BE82F00F30BBE /* Lightroom Catalog Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightroom Catalog Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44485B771B50A8B8008E5C88 /* Quartz.framework in Frameworks */,
 				440492AE1B4CAB85001ECCEF /* libsqlite3.0.dylib in Frameworks */,
 				EA11FE95EDD54EBF11B2C9F8 /* libPods-Lightroom Catalog Cleaner.a in Frameworks */,
 			);
@@ -149,6 +152,7 @@
 		898FC8503339806149067E1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44485B761B50A8B8008E5C88 /* Quartz.framework */,
 				E0C3771F12E3F1189337DD95 /* libPods-Lightroom Catalog Cleaner.a */,
 			);
 			name = Frameworks;

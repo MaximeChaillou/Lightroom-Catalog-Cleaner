@@ -57,7 +57,7 @@ FMDatabase *db = nil;
                 
                 FileObject* file = [FileObject new];
                 file.path = url;
-                file.size = [[info valueForKey:NSFileSize] longValue];
+                file.size = [file getSize];
                 
                 [result addObject:file];
                 

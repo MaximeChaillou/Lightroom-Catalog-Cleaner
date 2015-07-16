@@ -10,5 +10,17 @@
 
 @implementation FileObject: NSObject
 
+- (long) getSize {
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    
+    NSDictionary *info = [fileManager attributesOfItemAtPath:self.path.path error:&error];
+    
+    NSLog(@"error : %@", error);
+    NSLog(@"%@", [NSByteCountFormatter stringFromByteCount:[[info valueForKey:NSFileSize] longLongValue] countStyle:NSByteCountFormatterCountStyleFile]);
+    
+    return [[info valueForKey:NSFileSize] longValue];
+}
 
 @end

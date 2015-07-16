@@ -12,6 +12,8 @@
 
 @implementation ViewController
 
+NSArray *files;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,16 +77,20 @@
                               
                               CatalogManager *catalog = [[CatalogManager alloc] initDatabaseWithPath:path];
                               
-                              NSArray *files = [catalog getNonPickedFiles];
+                              files = [catalog getNonPickedFiles];
                               
-                              [self displayTotalCanSave: files];
+                              [self displayTotalCanSave];
+                              
+                              self.totalFiles.hidden = NO;
+                              self.totalFiles.stringValue = [NSString stringWithFormat:@"%lu files found", (unsigned long)files.count];
                               
                           }
                           
                       }];
 }
 
-- (void) displayTotalCanSave: (NSArray *)files {
+
+- (void) displayTotalCanSave {
     long total = 0;
     for ( FileObject *file in files ) {
         total += file.size;

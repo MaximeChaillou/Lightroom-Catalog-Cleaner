@@ -112,11 +112,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="175"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="302"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaS-k5-nOt">
-                                <rect key="frame" x="94" y="112" width="213" height="32"/>
+                                <rect key="frame" x="94" y="239" width="213" height="32"/>
                                 <buttonCell key="cell" type="push" title="Open a Lightroom catalog" bezelStyle="rounded" image="NSFolder" imagePosition="left" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BlC-Gj-qWu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -128,9 +128,17 @@
                                 </connections>
                             </button>
                             <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TeR-Qq-NFG">
-                                <rect key="frame" x="114" y="78" width="173" height="17"/>
+                                <rect key="frame" x="114" y="205" width="173" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="You can save : size" id="j8c-bz-RqQ">
                                     <font key="font" metaFont="system"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-WL-ELw">
+                                <rect key="frame" x="100" y="187" width="201" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="x files found" id="EYl-Y5-YOQ">
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -140,12 +148,13 @@
                     <connections>
                         <outlet property="backgroundView" destination="m2S-Jp-Qdl" id="OzI-cK-djF"/>
                         <outlet property="openFileButton" destination="WaS-k5-nOt" id="xmJ-Oe-QLK"/>
+                        <outlet property="totalFiles" destination="QEy-WL-ELw" id="oaw-uz-1DD"/>
                         <outlet property="totalSize" destination="TeR-Qq-NFG" id="8EW-lb-DGU"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75.5" y="648.5"/>
+            <point key="canvasLocation" x="75" y="712"/>
         </scene>
     </scenes>
     <resources>

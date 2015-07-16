@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Quartz/Quartz.h>
 
 @interface ViewController : NSViewController
 
@@ -15,6 +16,7 @@
 @property (strong) NSPasteboard *pboard;
 @property (weak) IBOutlet NSButton *openFileButton;
 @property (weak) IBOutlet NSTextField *totalSize;
+@property (weak) IBOutlet NSTextField *totalFiles;
 
 @end
 
