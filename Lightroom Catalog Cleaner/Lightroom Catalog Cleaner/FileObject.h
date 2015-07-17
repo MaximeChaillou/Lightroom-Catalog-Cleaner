@@ -15,5 +15,6 @@
 
 
 - (long) getSize;
+- (BOOL) delete;
 
 @end

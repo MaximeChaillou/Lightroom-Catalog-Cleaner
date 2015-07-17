@@ -23,4 +23,11 @@
     return [[info valueForKey:NSFileSize] longValue];
 }
 
+- (BOOL) delete {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    
+    return [fileManager removeItemAtPath:self.path.path error:&error];
+}
+
 @end

@@ -14,14 +14,12 @@
 
 NSArray *files;
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.backgroundView setWantsLayer:YES];
     [self.backgroundView.layer setBackgroundColor:[[NSColor colorWithRed:59.0/255.0 green:59.0/255 blue:61.0/255.0 alpha:1.0] CGColor]];
     [[self.openFileButton cell] setBackgroundColor:[NSColor redColor]];
-    
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -36,25 +34,18 @@ NSArray *files;
     
     //this gives you a copy of an open file dialogue
     NSOpenPanel* openPanel = [NSOpenPanel openPanel];
-    
     //set the title of the dialogue window
     openPanel.title = @"Choose a .lrcat file";
-    
     //shoud the user be able to resize the window?
     openPanel.showsResizeIndicator = YES;
-    
     //should the user see hidden files (for user apps - usually no)
     openPanel.showsHiddenFiles = NO;
-    
     //can the user select a directory?
     openPanel.canChooseDirectories = NO;
-    
     //can the user create directories while using the dialogue?
     openPanel.canCreateDirectories = YES;
-    
     //should the user be able to select multiple files?
     openPanel.allowsMultipleSelection = NO;
-    
     //an array of file extensions to filter the file list
     openPanel.allowedFileTypes = @[@"lrcat"];
     
@@ -79,16 +70,23 @@ NSArray *files;
                               
                               files = [catalog getNonPickedFiles];
                               
-                              [self displayTotalCanSave];
-                              
-                              self.totalFiles.hidden = NO;
-                              self.totalFiles.stringValue = [NSString stringWithFormat:@"%lu files found", (unsigned long)files.count];
-                              
+                              [self updateViewAfterCatalog];
                           }
                           
                       }];
 }
 
+- (void) updateViewAfterCatalog {
+    [self displayTotalCanSave];
+    
+    self.totalFiles.hidden = NO;
+    self.totalFiles.stringValue = [NSString stringWithFormat:@"%lu files found", (unsigned long)files.count];
+    
+    if ( files.count > 0 ) {
+        self.deleteButton.hidden = NO;
+    }
+    
+}
 
 - (void) displayTotalCanSave {
     long total = 0;
@@ -97,6 +95,50 @@ NSArray *files;
     }
     self.totalSize.stringValue = [NSString stringWithFormat:@"You can save : %@", [NSByteCountFormatter stringFromByteCount:total countStyle:NSByteCountFormatterCountStyleFile]];
     self.totalSize.hidden = NO;
+}
+
+- (IBAction)clickOnDelete:(id)sender {
+    NSLog(@"Click on delete");
+    
+    // Alert user that all files will be deleted permanently
+    NSAlert *alertDelete = [[NSAlert alloc] init];
+    
+    [alertDelete addButtonWithTitle:@"Yes, I'm sure"];
+    [alertDelete addButtonWithTitle:@"No, I'm not sure"];
+    
+    [alertDelete setMessageText:@"Are you sure you want to permanently delete all these files ?"];
+    
+    [alertDelete setAlertStyle:NSCriticalAlertStyle];
+    
+    // If OK, start to delete
+    if ([alertDelete runModal] == NSAlertFirstButtonReturn) {
+        NSLog(@"Delete files permanently");
+        
+        for (FileObject *file in files) {
+            if (![file delete]) {
+                NSLog(@"Error when deleting %@", file.path.path);
+            }
+        }
+    }
+    
+    [self initView];
+    
+    // Information for the user after delete
+    NSAlert *alert = [[NSAlert alloc] init];
+    
+    [alert addButtonWithTitle:@"OK"];
+    [alert setMessageText:@"Files deleted"];
+    [alert setInformativeText:@"All your files have been deleted.\nNow relaunch your catalog in LightRoom and re-synchronised your directory(ies)."];
+    
+    [alert setAlertStyle:NSInformationalAlertStyle];
+    [alert runModal];
+    
+}
+
+- (void) initView {
+    self.totalFiles.hidden = YES;
+    self.deleteButton.hidden = YES;
+    self.totalSize.hidden = YES;
 }
 
 @end

@@ -17,6 +17,7 @@
 @property (weak) IBOutlet NSButton *openFileButton;
 @property (weak) IBOutlet NSTextField *totalSize;
 @property (weak) IBOutlet NSTextField *totalFiles;
+@property (weak) IBOutlet NSButton *deleteButton;
 
 @end
 

@@ -41,33 +41,30 @@ FMDatabase *db = nil;
     
     if ( [db open] ) {
         
-        FMResultSet *s = [db executeQuery:@"SELECT Adobe_images.rootFile, AgLibraryFile.baseName, AgLibraryFolder.pathFromRoot, AgLibraryRootFolder.absolutePath FROM Adobe_images INNER JOIN AgLibraryFile ON Adobe_images.rootFile = AgLibraryFile.id_local INNER JOIN AgLibraryFolder ON AgLibraryFile.folder = AgLibraryFolder.id_local INNER JOIN AgLibraryRootFolder ON AgLibraryFolder.rootFolder = AgLibraryRootFolder.id_local WHERE Adobe_images.pick != 1 AND fileFormat = 'RAW'"];
+        FMResultSet *s = [db executeQuery:@"SELECT Adobe_images.rootFile, AgLibraryFile.baseName, AgLibraryFolder.pathFromRoot, AgLibraryRootFolder.absolutePath, AgLibraryFile.extension FROM Adobe_images INNER JOIN AgLibraryFile ON Adobe_images.rootFile = AgLibraryFile.id_local INNER JOIN AgLibraryFolder ON AgLibraryFile.folder = AgLibraryFolder.id_local INNER JOIN AgLibraryRootFolder ON AgLibraryFolder.rootFolder = AgLibraryRootFolder.id_local WHERE Adobe_images.pick != 1 AND fileFormat = 'RAW'"];
+        
+        NSFileManager *fileManager = [NSFileManager defaultManager];
         
         while ([s next]) {
             //retrieve values for each record
             
-            NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@%@.CR2", [s stringForColumnIndex:3], [s stringForColumnIndex:2], [s stringForColumnIndex:1]]];
+            NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@%@.%@", [s stringForColumnIndex:3], [s stringForColumnIndex:2], [s stringForColumnIndex:1], [s stringForColumnIndex:4]]];
 
             if ([url isFileURL]) {
-                
-                NSFileManager *fileManager = [NSFileManager defaultManager];
-                NSError *error = nil;
-                
-                NSDictionary *info = [fileManager attributesOfItemAtPath:url.path error:&error];
-                
-                FileObject* file = [FileObject new];
-                file.path = url;
-                file.size = [file getSize];
-                
-                [result addObject:file];
-                
-                //total += [[info valueForKey:NSFileSize] longValue];
-                
-                NSLog(@"error : %@", error);
-                NSLog(@"%@", [NSByteCountFormatter stringFromByteCount:[[info valueForKey:NSFileSize] longLongValue] countStyle:NSByteCountFormatterCountStyleFile]);
+                if ([fileManager fileExistsAtPath:url.path]) {
+                    
+                    FileObject* file = [FileObject new];
+                    file.path = url;
+                    file.size = [file getSize];
+                    
+                    [result addObject:file];
+                }
+                else {
+                    NSLog(@"File doesn't exist");
+                }
             }
             else {
-                NSLog(@"Can't open file");
+                NSLog(@"Bad path");
             }
             
         }
