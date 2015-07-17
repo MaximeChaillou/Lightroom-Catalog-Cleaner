@@ -13,6 +13,7 @@
 @implementation ViewController
 
 NSArray *files;
+CatalogManager *catalog;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,7 +67,7 @@ NSArray *files;
                               //here add your own code to open the file
                               NSLog(@"%@", path);
                               
-                              CatalogManager *catalog = [[CatalogManager alloc] initDatabaseWithPath:path];
+                              catalog = [[CatalogManager alloc] initDatabaseWithPath:path];
                               
                               files = [catalog getNonPickedFiles];
                               
@@ -80,7 +81,7 @@ NSArray *files;
     [self displayTotalCanSave];
     
     self.totalFiles.hidden = NO;
-    self.totalFiles.stringValue = [NSString stringWithFormat:@"%lu files found", (unsigned long)files.count];
+    self.totalFiles.stringValue = [NSString stringWithFormat:@"%lu files found on %d files in your catalog", (unsigned long)files.count, [catalog getTotalFilesCount]];
     
     if ( files.count > 0 ) {
         self.deleteButton.hidden = NO;

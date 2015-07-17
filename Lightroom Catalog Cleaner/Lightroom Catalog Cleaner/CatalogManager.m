@@ -28,10 +28,14 @@ FMDatabase *db = nil;
 
 
 
-- (void) getTotalFilesCount {
+- (int) getTotalFilesCount {
     if ( [db open] ) {
-        NSLog(@"ok");
+        FMResultSet *s = [db executeQuery:@"SELECT count(*) FROM Adobe_images"];
+        if ([s next]) {
+            return [s intForColumnIndex:0];
+        }
     }
+    return 0;
 }
 
 

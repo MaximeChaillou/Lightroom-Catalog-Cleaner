@@ -13,7 +13,7 @@
 
 - (id)initDatabaseWithPath: (NSString *) path;
 
-- (void) getTotalFilesCount;
+- (int) getTotalFilesCount;
 - (NSArray *) getNonPickedFiles;
 
 @end
