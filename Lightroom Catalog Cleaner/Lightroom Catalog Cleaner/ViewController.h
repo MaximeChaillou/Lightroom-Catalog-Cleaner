@@ -18,6 +18,7 @@
 @property (weak) IBOutlet NSTextField *totalSize;
 @property (weak) IBOutlet NSTextField *totalFiles;
 @property (weak) IBOutlet NSButton *deleteButton;
+@property (weak) IBOutlet NSProgressIndicator *loadingIndicator;
 
 @end
 

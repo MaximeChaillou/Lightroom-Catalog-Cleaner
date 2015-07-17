@@ -153,11 +153,15 @@
                                     <action selector="clickOnDelete:" target="XfG-lQ-9wD" id="FnV-44-grq"/>
                                 </connections>
                             </button>
+                            <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="0cq-Mj-MHa">
+                                <rect key="frame" x="193" y="28" width="16" height="16"/>
+                            </progressIndicator>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="m2S-Jp-Qdl" id="OzI-cK-djF"/>
                         <outlet property="deleteButton" destination="KDf-Oj-qgY" id="NJC-BP-Zxy"/>
+                        <outlet property="loadingIndicator" destination="0cq-Mj-MHa" id="M13-tU-qXT"/>
                         <outlet property="openFileButton" destination="WaS-k5-nOt" id="xmJ-Oe-QLK"/>
                         <outlet property="totalFiles" destination="QEy-WL-ELw" id="oaw-uz-1DD"/>
                         <outlet property="totalSize" destination="TeR-Qq-NFG" id="8EW-lb-DGU"/>

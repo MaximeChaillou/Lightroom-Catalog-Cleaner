@@ -114,6 +114,7 @@ CatalogManager *catalog;
     // If OK, start to delete
     if ([alertDelete runModal] == NSAlertFirstButtonReturn) {
         NSLog(@"Delete files permanently");
+        self.loadingIndicator.hidden = NO;
         
         for (FileObject *file in files) {
             if (![file delete]) {
@@ -140,6 +141,8 @@ CatalogManager *catalog;
     self.totalFiles.hidden = YES;
     self.deleteButton.hidden = YES;
     self.totalSize.hidden = YES;
+    self.loadingIndicator.hidden = YES;
+
 }
 
 @end
