@@ -6,3 +6,5 @@ Lightroom Catalog Cleaner allows you to remove all the non-picked RAW file (whit
 Just open the catalog you want to clean then it will clean it up in one click.
 
 If you shoot in RAW + Jpeg, it will keep all the Jpeg files.
+
+Works with Lightroom 5 and 6.
