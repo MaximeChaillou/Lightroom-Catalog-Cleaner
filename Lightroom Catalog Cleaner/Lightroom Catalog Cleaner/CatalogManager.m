@@ -45,14 +45,14 @@ FMDatabase *db = nil;
     
     if ( [db open] ) {
         
-        FMResultSet *s = [db executeQuery:@"SELECT Adobe_images.rootFile, AgLibraryFile.baseName, AgLibraryFolder.pathFromRoot, AgLibraryRootFolder.absolutePath, AgLibraryFile.extension FROM Adobe_images INNER JOIN AgLibraryFile ON Adobe_images.rootFile = AgLibraryFile.id_local INNER JOIN AgLibraryFolder ON AgLibraryFile.folder = AgLibraryFolder.id_local INNER JOIN AgLibraryRootFolder ON AgLibraryFolder.rootFolder = AgLibraryRootFolder.id_local WHERE Adobe_images.pick != 1 AND fileFormat = 'RAW'"];
+        FMResultSet *s = [db executeQuery:@"SELECT AgLibraryFile.originalFilename, AgLibraryFolder.pathFromRoot, AgLibraryRootFolder.absolutePath FROM Adobe_images INNER JOIN AgLibraryFile ON Adobe_images.rootFile = AgLibraryFile.id_local INNER JOIN AgLibraryFolder ON AgLibraryFile.folder = AgLibraryFolder.id_local INNER JOIN AgLibraryRootFolder ON AgLibraryFolder.rootFolder = AgLibraryRootFolder.id_local WHERE Adobe_images.pick != 1 AND (fileFormat = 'RAW' OR fileFormat = 'DNG')"];
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
         
         while ([s next]) {
             //retrieve values for each record
             
-            NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@%@.%@", [s stringForColumnIndex:3], [s stringForColumnIndex:2], [s stringForColumnIndex:1], [s stringForColumnIndex:4]]];
+            NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@%@", [s stringForColumnIndex:2], [s stringForColumnIndex:1], [s stringForColumnIndex:0]]];
 
             if ([url isFileURL]) {
                 if ([fileManager fileExistsAtPath:url.path]) {
